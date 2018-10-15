@@ -1,0 +1,20 @@
+body {
+	background:#999;
+	font-family: arial;
+}
+
+h1, h2 {
+	color: Blue;
+}
+
+p {
+	background: Black;
+	color: Red;
+	padding: 10px;
+}
+
+.secondary{
+	border-color: Orange;
+	padding: 20px;
+	background-color: Blue; 
+}

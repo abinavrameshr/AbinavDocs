@@ -1,0 +1,85 @@
+{
+    "container": [
+        {
+            "card1": {
+                "title":"All Projects",
+                "value":5,
+                "stats": "13% increase"
+            },
+            "card2": {
+                "title":"Team Members",
+                "value" : 5,
+                "stats" : "4 % Increase"
+            },
+            "card3": {
+                "title":"Total Budget",
+                "value": "$ 80990",
+                "stats" : "5% Increase"
+            },
+            "card4" : {
+                "title": "new customers",
+                "value" : 3,
+                "stats" : "6 % increase"
+            },
+            
+            "card5": {
+                "projects": "Ongoing Projects",
+                "count": " | 32"
+            },
+            "table1": {
+                "th1": "projects",
+                "th2": "Deadline",
+                "th3": "team",
+                "th4": "budget",
+                "th5": "status"
+            },
+            "tablerow1": {
+                "tr1": "Service Now",
+                "tr2": "PSIOG DIGITAL",
+                "tr3": " 10th October 2018",
+                "tr4":"Overdue",
+                "tr5":"Abinav Ramesh",
+                "tr6": "IN Service Now Team",
+                "tr7": "4,760 $",
+                "tr8": "paid"
+                
+            },
+            "tablerow2": {
+                "tr1": "UNIX",
+                "tr2": "PSIOG DIGITAL",
+                "tr3": " 10th October 2018",
+                "tr4":"Overdue",
+                "tr5":"Mohammed",
+                "tr6": "IN UNIX Team",
+                "tr7": "4,760 $",
+                "tr8": "paid"
+            
+                
+            },
+            "tablerow3": {
+                "tr1": "Cloud",
+                "tr2": "PSIOG DIGITAL",
+                "tr3": " 12th October 2018",
+                "tr4":"Complete",
+                "tr5":"Srinidhi",
+                "tr6": "IN Cloud Team",
+                "tr7": "7,760 $",
+                "tr8": "paid"
+              
+        
+            },
+            "tablerow4": {
+                "tr1": "Windows",
+                "tr2": "PSIOG DIGITAL",
+                "tr3": " 12th October 2018",
+                "tr4":"Complete",
+                "tr5":"Chilton",
+                "tr6": "IN Windows Team",
+                "tr7": "5,760 $",
+                "tr8": "paid"
+                
+            }
+        }
+        
+    ]
+}
