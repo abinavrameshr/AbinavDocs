@@ -1,0 +1,32 @@
+{
+    "container": [
+        {
+            "card1": {
+                "title":"All Projects",
+                "value":5,
+                "stats": "13% increase"
+            },
+            "card2": {
+                "title":"Team Members",
+                "value" : 5,
+                "stats" : "4 % Increase"
+            },
+            "card3": {
+                "title":"Total Budget",
+                "value": "$ 80990",
+                "stats" : "5% Increase"
+            },
+            "card4" : {
+                "title": "new customers",
+                "value" : 3,
+                "stats" : "6 % increase"
+            },
+            
+            "card5": {
+                "projects": "Ongoing Projects",
+                "count": " | 32"
+            }
+        }
+        
+    ]
+}
