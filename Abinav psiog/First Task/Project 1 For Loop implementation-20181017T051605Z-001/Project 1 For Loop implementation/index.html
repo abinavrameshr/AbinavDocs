@@ -1,0 +1,65 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,600" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.selectric/1.10.1/selectric.css'>
+  
+  <link rel="stylesheet" href="css/style.css">
+  
+
+</head>
+<body>
+  <h1 class="header" style = "cursor:pointer " onclick="maintable()"> This is Abinav's Dashboard</h1>
+  <div class="container card-list">
+
+    <div class="card blue" style="cursor:pointer" onclick="projectstable()">
+      <div id="projectstitle" class="title"></div><span class="glyphicon glyphicon-upload"></span>
+      <div id="projectscount" class="value"></div>
+      <div id="projectsstat" class="stat"></div>
+    </div>
+
+    <div class="card green" style="cursor:pointer" onclick="teammemberstable()">
+      <div id="teammemberstitle" class="title"></div><span class="glyphicon glyphicon-upload"></span>
+      <div id="teammemberscount" class="value"></div>
+      <div id="teammembersstat" class="stat"></div>
+    </div>
+
+    <div class="card orange" style="cursor:pointer" onclick="budgettable()">
+      <div id="budgettitle" class="title"></div><span class="glyphicon glyphicon-upload"></span>
+      <div id="budgetvalue" class="value"></div>
+      <div id="budgetstat" class="stat"></div>
+    </div>
+
+    <div class="card red" style="cursor:pointer" onclick="newcustomerstable()">
+      <div id="customerstitle" class="title"></div><span class="glyphicon glyphicon-upload"></span>
+      <div id="customerscount" class="value"></div>
+      <div id="customersstat" class="stat"></div>
+    </div>
+  </div>
+
+  <div class="container projects">
+    <div class="projects-inner">
+      <header class="projects-header">
+        <div id="projects" class="title"></div>
+        <div id="count" class="count"></div><span class="glyphicon glyphicon-download-alt"></span>
+      </header>
+
+      <table class="projects-table" id='tablecreate'></table>
+    </div>
+  </div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/jquery.selectric/1.10.1/jquery.selectric.min.js'></script>
+
+      <script  src="js/maindashboard.js"></script>
+      <script  src="js/projectscard.js"></script><script  src="js/teammemberscard.js"></script><script  src="js/budgetcard.js"></script>
+      <script  src="js/newcustomerscard.js"></script>
+      
+  </body>
+  
+  </html>
