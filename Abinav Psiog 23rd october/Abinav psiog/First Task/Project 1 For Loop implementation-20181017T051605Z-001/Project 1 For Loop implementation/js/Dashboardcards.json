@@ -1,0 +1,32 @@
+{
+    "cards": [
+        {
+            "projects": {
+                "projects":"All Projects",
+                "count":5,
+                "stat": "13% increase"
+            },
+            "teammembers": {
+                "teammembers":"Team Members",
+                "count" : 5,
+                "stat" : "4 % Increase"
+            },
+            "budget": {
+                "budget":"Total Budget",
+                "value": "$ 80990",
+                "stat" : "5% Increase"
+            },
+            "customers" : {
+                "customers": "new customers",
+                "count" : 3,
+                "stat" : "6 % increase"
+            },
+            
+            "project": {
+                "projects": "Ongoing Projects",
+                "count": " | 5"
+            }
+        }
+        
+    ]
+}
