@@ -1,49 +1,3 @@
-
-
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = 
-
-function Cards(projects,count,stat,teammembers,budget,value,customers,projectsth,countth){
-if (this.readyState == 4 && this.status == 200) {
-  var response = JSON.parse(xhttp.responseText);
-      var Dashboardcards = response.cards;
-
-      this.projects=Dashboardcards[0].projects.projects;
-      this.count=Dashboardcards[0].projects.count;
-      this.stat=Dashboardcards[0].projects.stat;
-      this.teammembers=Dashboardcards[0].teammembers.teammembers;
-      this.budget=Dashboardcards[0].budget.budget;
-      this.value=Dashboardcards[0].budget.value;
-      this.customers=Dashboardcards[0].customers.customers;
-      this.projectsth=Dashboardcards[0].project.projects;
-      this.countth=Dashboardcards[0].project.count;
-      
-
-document.getElementById('projectstitle').innerHTML = this.projects;
-document.getElementById('projectsstat').innerHTML = this.stat;
-document.getElementById('projectscount').innerHTML = this.count;
-
-document.getElementById('teammemberstitle').innerHTML = this.teammembers;
-document.getElementById('teammembersstat').innerHTML = this.stat;
-document.getElementById('teammemberscount').innerHTML = this.count;
-
-document.getElementById('budgettitle').innerHTML = this.budget;
-document.getElementById('budgetstat').innerHTML = this.stat;
-document.getElementById('budgetvalue').innerHTML = this.value;
-
-document.getElementById('customerstitle').innerHTML = this.customers;
-document.getElementById('customersstat').innerHTML = this.stat;
-document.getElementById('customerscount').innerHTML = this.count;
-
-document.getElementById('projects').innerHTML = this.projectsth;
-document.getElementById('count').innerHTML = this.countth;
-
-}
-};
-xhttp.open("GET", "js/Dashboardcards.json", true);
-xhttp.send();
-
-    
 function maintable(){
     function tablecreate() {
         var xhttp = new XMLHttpRequest();
@@ -108,6 +62,39 @@ window.onclick = function(event) {
     }
 }
 
+
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function (){
+    if (this.readyState == 4 && this.status == 200) {
+      var response = JSON.parse(xhttp.responseText);
+          var Dashboardcards = response.cards;
+          
+          for(var r = 1; r < Dashboardcards.length; r++){
+              
+        var cards='<div class="card blue" style="cursor:pointer" onclick="projectstable()">'+'<div class="title">'+Dashboardcards[0].card1.title+'</div>'+
+        '<span class="glyphicon glyphicon-upload"></span>'+'<div class="value">'+
+        Dashboardcards[0].card1.value+'</div>'+'<div  class="stat">'+
+        Dashboardcards[0].card1.stat+'</div></div>'+'<div class="card green" style="cursor:pointer" onclick="teammemberstable()">'+'<div class="title">'+Dashboardcards[1].card1.title+'</div>'+
+        '<span class="glyphicon glyphicon-upload"></span>'+'<div class="value">'+
+        Dashboardcards[1].card1.value+'</div>'+'<div  class="stat">'+
+        Dashboardcards[1].card1.stat+'</div></div>'+'<div class="card orange" style="cursor:pointer" onclick="budgettable()">'+'<div class="title">'+Dashboardcards[2].card1.title+'</div>'+
+        '<span class="glyphicon glyphicon-upload"></span>'+'<div class="value">'+
+        Dashboardcards[2].card1.value+'</div>'+'<div  class="stat">'+
+        Dashboardcards[2].card1.stat+'</div></div>'+'<div class="card red" style="cursor:pointer" onclick="newcustomerstable()">'+'<div class="title">'+Dashboardcards[3].card1.title+'</div>'+
+        '<span class="glyphicon glyphicon-upload"></span>'+'<div class="value">'+
+        Dashboardcards[3].card1.value+'</div>'+'<div  class="stat">'+
+        Dashboardcards[3].card1.stat+'</div></div>';
+    
+    }
+    document.getElementById("cards").innerHTML = cards;
+    console.log(Dashboardcards.length);
+    }
+    };
+    
+    xhttp.open("GET", "js/Dashboardcards.json", true);
+    xhttp.send();
+    
 
   
 

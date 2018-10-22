@@ -1,32 +1,31 @@
 {
     "cards": [
         {
-            "projects": {
-                "projects":"All Projects",
-                "count":5,
+            "card1": {
+                "title":"All Projects",
+                "value":5,
                 "stat": "13% increase"
-            },
-            "teammembers": {
-                "teammembers":"Team Members",
-                "count" : 5,
+               
+            }},{
+            "card1": {
+                "title":"Team Members",
+                "value" : 5,
                 "stat" : "4 % Increase"
-            },
-            "budget": {
-                "budget":"Total Budget",
+                
+            }},{
+            "card1": {
+                "title":"Total Budget",
                 "value": "$ 80990",
                 "stat" : "5% Increase"
-            },
-            "customers" : {
-                "customers": "new customers",
-                "count" : 3,
+                
+
+            }},{
+            "card1" : {
+                "title": "new customers",
+                "value" : 3,
                 "stat" : "6 % increase"
-            },
-            
-            "project": {
-                "projects": "Ongoing Projects",
-                "count": " | 5"
-            }
-        }
+                
+            }}
         
     ]
 }

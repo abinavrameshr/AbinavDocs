@@ -50,38 +50,13 @@
 
   
   <div class="wrapper"><button class="btn1 btn2"  style = "cursor:pointer " onclick="maintable()">Home Dashboard</button></div>
-  <div class="container card-list">
-
-    <div class="card blue" style="cursor:pointer" onclick="projectstable()">
-      <div id="projectstitle" class="title"></div><span class="glyphicon glyphicon-upload"></span>
-      <div id="projectscount" class="value"></div>
-      <div id="projectsstat" class="stat"></div>
-    </div>
-
-    <div class="card green" style="cursor:pointer" onclick="teammemberstable()">
-      <div id="teammemberstitle" class="title"></div><span class="glyphicon glyphicon-upload"></span>
-      <div id="teammemberscount" class="value"></div>
-      <div id="teammembersstat" class="stat"></div>
-    </div>
-
-    <div class="card orange" style="cursor:pointer" onclick="budgettable()">
-      <div id="budgettitle" class="title"></div><span class="glyphicon glyphicon-upload"></span>
-      <div id="budgetvalue" class="value"></div>
-      <div id="budgetstat" class="stat"></div>
-    </div>
-
-    <div class="card red" style="cursor:pointer" onclick="newcustomerstable()">
-      <div id="customerstitle" class="title"></div><span class="glyphicon glyphicon-upload"></span>
-      <div id="customerscount" class="value"></div>
-      <div id="customersstat" class="stat"></div>
-    </div>
-  </div>
+  <div id='cards' class="container card-list"></div>
 
   <div class="container projects">
     <div class="projects-inner">
       <header class="projects-header">
-        <div id="projects" class="title"></div>
-        <div id="count" class="count"></div><span class="glyphicon glyphicon-download-alt"></span>
+        <div class="title">Ongoing projects</div>
+        <div  class="count"></div>| 5<span class="glyphicon glyphicon-download-alt"></span>
       </header>
 
       <table class="projects-table" id='tablecreate'></table>
