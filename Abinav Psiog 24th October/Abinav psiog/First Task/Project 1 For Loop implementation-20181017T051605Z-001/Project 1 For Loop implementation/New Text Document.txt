@@ -1,0 +1,6 @@
+Projects	Deadline	Team	Budget	Status	Projects % increase 	Budget % increase Team members % 	Increase in Customers	Customers % Increase
+Service Now	12th October	Abinav Ramesh	1000$	Complete	13%	12%	HCL,Wipro	10%
+Cloud 	15th October	Mohamed Haludeen	1200$	Complete	12%	11%	TCS,CTS	12%
+Unix	21st October	Srinidhi	1400$	Complete	9%	10%	Oil and Gas Limited	13%
+Magento	1st November	Manjunath	2100$	Complete	6%	7%	IBM	15%
+Windows	1st November	Chilton	2000$	Complete	12%	12%	Infoview	18%
