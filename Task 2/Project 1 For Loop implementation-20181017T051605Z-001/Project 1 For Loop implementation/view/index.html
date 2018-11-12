@@ -1,0 +1,66 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,600" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper"><h1 class="header">Project Dashboard</h1></div></div>
+  <div class="wrapper">    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container1">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container1" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    <div class="wrapper"><button class="btn1 btn2"  style = "cursor:pointer " onclick="maintable()">Home Dashboard</button></div>
+  <div id='cards' class="container card-list"></div>
+
+  <div class="container projects">
+    <div class="projects-inner">
+      <header class="projects-header">
+        <div class="title">Ongoing projects</div>
+        <div  class="count"></div>| 5<span class="glyphicon glyphicon-download-alt"></span>
+      </header>
+
+      <table class="projects-table" id='tablecreate'></table>
+    </div>
+  </div>
+  <div><iframe width="1280" height="720" src="https://app.powerbi.com/view?r=eyJrIjoiNmY4NjlkMGQtODk4NC00NDhhLWI5YmYtNDIzOGEyN2IyMzBhIiwidCI6IjgzOTljMWMyLTljMWItNGQwZC05N2ZiLWUwY2ZlZDIzMTg3OCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe></div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/jquery.selectric/1.10.1/jquery.selectric.min.js'></script>
+
+      <script  src="../Controller/maindashboard.js"></script>
+      <script  src="../Controller/projectscard.js"></script><script  src="../Controller/teammemberscard.js"></script><script  src="../Controller/budgetcard.js"></script>
+      <script  src="../Controller/newcustomerscard.js"></script>
+      
+  </body>
+  
+  </html>

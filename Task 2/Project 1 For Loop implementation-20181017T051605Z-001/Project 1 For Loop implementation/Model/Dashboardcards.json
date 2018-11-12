@@ -1,0 +1,39 @@
+{
+    "cards": [
+        {
+            "card1": {
+                "title":"All Projects",
+                "value":5,
+                "stat": "13% increase",
+                "class":"card blue",
+                "fn":"projectstable()"
+               
+            }},{
+            "card1": {
+                "title":"Team Members",
+                "value" : 5,
+                "stat" : "4 % Increase",
+                "class":"card green",
+                "fn":"teammemberstable()"
+                
+            }},{
+            "card1": {
+                "title":"Total Budget",
+                "value": "$ 80990",
+                "stat" : "5% Increase",
+                "class":"card orange",
+                "fn":"budgettable()"
+                
+
+            }},{
+            "card1" : {
+                "title": "new customers",
+                "value" : 3,
+                "stat" : "6 % increase",
+                "class":"card red",
+                "fn":"newcustomerstable()"
+                
+            }}
+        
+    ]
+}
